@@ -30,6 +30,8 @@ const option = new schema.Entity('option')
 const user = new schema.Entity('user')
 const project = new schema.Entity('project')
 const asset = new schema.Entity('asset', {
+  files: [file],
+  options: [option]
 })
 const work = new schema.Entity('work', {
   files: [file],
